@@ -1,0 +1,179 @@
+/* ЗАГАЛЬНІ СТИЛІ */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #372F33;
+    color: white;
+}
+
+/* --- ШАПКА САЙТУ (HEADER) --- */
+header {
+    background-color: #B4ADA7;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4d3722;
+      text-shadow: 2px 2px 6px #faaf64;
+    
+}
+
+/* Клас для списку меню замість nav ul */
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+/* Клас для посилань меню замість nav a */
+.nav-link {
+    text-decoration: none;
+    color: #4d3722;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+/* --- HERO БЛОК --- */
+.hero {
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+        url('https://static.wikia.nocookie.net/cat-jump/images/4/49/364f13a2f10e470bcc6fcda034f696a1_fgraphic.png/revision/latest/scale-to-width-down/1000?cb=20240922231611');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Клас для заголовка Hero замість .hero h1 */
+.hero-title {
+    font-size: 75px;
+    margin-bottom: 10px;
+    text-shadow: 4px 4px 6px yellow;
+}
+
+/* Клас для опису Hero замість .hero p */
+.hero-desc {
+    font-size: 30px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    text-shadow: 4px 4px 6px yellow;
+
+}
+
+/* --- КНОПКА --- */
+.magic-button {
+    /* --- СЮДИ ДОДАМО СТИЛІ --- */
+    padding: 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, white, yellow);
+}
+.magic-button:hover{
+    background-image: linear-gradient(to left, white, yellow);
+    transform: scale(1.05) translateY(-3px);
+}
+
+
+/* --- ОСНОВНИЙ КОНТЕНТ --- */
+main {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #2e2e2e;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #444;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: white;
+    background-color: #333;
+}
+
+/* Класи для елементів картки замість контекстних селекторів */
+.card-img {
+    height: 250px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    color: #ffd700;
+    margin-top: 0;
+}
+
+.card-desc {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+/* --- ПІДВАЛ --- */
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid white;
+    margin-top: 40px;
+}
+
+/* Клас для тексту підвалу замість footer p */
+.footer-text {
+    color: white;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
